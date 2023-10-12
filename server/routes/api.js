@@ -4,7 +4,27 @@ const Brand = require('../models/Brand');
 
 // Retrieve and filter/sort brands
 router.get('/brands', async (req, res) => {
-  // Your existing code to retrieve and filter/sort brands
+  try {
+    let query = Brand.find({ published: true });
+
+    // Filter by specific criteria if provided in the request
+    if (req.query.filter) {
+      query = query.where({ category: req.query.filter });
+    }
+
+    // Sort the results by name (or other criteria if needed)
+    if (req.query.sort === 'name') {
+      query = query.sort('name');
+    } else if (req.query.sort === 'published') {
+      query = query.sort('published');
+    }
+
+    const brands = await query.exec();
+    res.json(brands);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: 'Internal Server Error' });
+  }
 });
 
 // Add a new brand to the database
