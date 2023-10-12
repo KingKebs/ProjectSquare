@@ -1,8 +1,17 @@
 const mongoose = require('mongoose');
 
 const brandSchema = new mongoose.Schema({
-  name: String,
-  published: Boolean,
+  name: {
+    type: String,
+    required: true,
+  },
+  category: String, // Modify to match your data structure
+  published: {
+    type: Boolean,
+    default: true,
+  },
 });
 
-module.exports = mongoose.model('Brand', brandSchema);
+const Brand = mongoose.model('Brand', brandSchema);
+
+module.exports = Brand;
