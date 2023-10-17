@@ -1,4 +1,15 @@
 /* WhatWeDo.css */
-.what-we-do-container {
-    /* Styling for the "What We Do" section... */
-  }
+.what-we-do {
+  text-align: left; /* Align text to the left */
+  padding: 20px; /* Add some padding for spacing */
+}
+
+h2 {
+  font-size: 24px; /* Set the title font size */
+}
+
+.large-text {
+  font-size: 18px; /* Set the font size for large text */
+  font-weight: bold; /* Apply bold style to the text */
+  margin: 10px 0; /* Add margin for spacing between sentences */
+}

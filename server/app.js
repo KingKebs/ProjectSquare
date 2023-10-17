@@ -6,7 +6,7 @@ const bodyParser = require('body-parser'); // Add this line
 app.use(bodyParser.json()); // Add this line to parse JSON in the request body
 
 app.get('/', (req, res) => {
-  res.send('Hello, World!');
+  res.send('Project Square!');
 });
 
 app.listen(port, () => {
