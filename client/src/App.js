@@ -10,7 +10,7 @@ function App() {
       <Menu />
       <Hero />
       <WhatWeDo />
-      <CaseStudySlider />
+      <Slider />
       {/* Other components... */}
     </div>
   );

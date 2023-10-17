@@ -1,0 +1,27 @@
+/* Menu.css */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .menu-items ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  .lets-talk {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
