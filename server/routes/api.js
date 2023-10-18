@@ -7,12 +7,10 @@ router.get('/brands', async (req, res) => {
   try {
     let query = Brand.find({ published: true });
 
-    // Filter by specific criteria if provided in the request
     if (req.query.filter) {
       query = query.where({ category: req.query.filter });
     }
 
-    // Sort the results by name (or other criteria if needed)
     if (req.query.sort === 'name') {
       query = query.sort('name');
     } else if (req.query.sort === 'published') {
@@ -30,17 +28,21 @@ router.get('/brands', async (req, res) => {
 // Add a new brand to the database
 router.post('/brands', async (req, res) => {
   try {
-    const { name, category, published } = req.body; // Assuming you send this data in the request body
+    const { name, category, published } = req.body;
 
-    // Create a new brand
     const newBrand = new Brand({ name, category, published });
     await newBrand.save();
 
-    res.status(201).json(newBrand); // Respond with the newly created brand
+    res.status(201).json(newBrand);
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: 'Internal Server Error' });
   }
+});
+
+// Add routes for the Footer section (if not using a separate file)
+router.get('/footer', (req, res) => {
+  // Implement routes for the Footer section here
 });
 
 module.exports = router;

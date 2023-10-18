@@ -29,26 +29,51 @@
 
 - package.json (Root, for managing both frontend and backend dependencies)
 
+# Project Square
 
+Project Square is a web application that showcases the work of leading brands in an interactive way. This README provides an overview of the project and instructions for getting it up and running.
 
-Here's a summary of the role of each file in the backend of your Project Square app:
+## Table of Contents
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [File Structure](#file-structure)
+- [Backend Setup](#backend-setup)
+- [Frontend Setup](#frontend-setup)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [License](#license)
 
-1. **app.js**:
-   - The main entry point for your Node.js application.
-   - Configures and initializes your Express.js server.
-   - Sets up routes, middleware, and other server-related configurations.
+## Features
+- Interactive display of leading brands
+- Ability to filter and sort brands
+- Showcase of case studies as a slider
+- Responsive layout
+- And more...
 
-2. **config/database.js**:
-   - Contains the configuration for connecting to your chosen database (e.g., MongoDB).
-   - Establishes a connection to the database using Mongoose or a similar library.
+## Prerequisites
+- Node.js and npm installed
+- MongoDB (or any database of your choice) installed
 
-3. **models/Brand.js**:
-   - Defines the data schema and structure for the "Brand" model.
-   - Specifies how data is stored in the database, including fields and their types.
+## Getting Started
+1. Clone the repository:
+    git clone https://github.com/your-username/project-square.git
+2. Navigate to the project's root directory:
 
-4. **routes/api.js**:
-   - Defines the API routes for your application.
-   - Handles requests and responses for routes related to brands and other data.
-   - Retrieves data from the database and sends it as a response to clients.
+3. Follow the setup instructions for the backend and frontend components (see [Backend Setup](#backend-setup) and [Frontend Setup](#frontend-setup)).
 
-These files collectively set up the backend infrastructure for your Project Square app. `app.js` is the entry point that configures the server, `database.js` connects to the database, `Brand.js` defines the data structure, and `api.js` handles API routes, data retrieval, and responses. This separation of concerns helps organize and manage your backend code effectively.
+4. Start the server and the frontend development server (see [Testing](#testing)).
+
+## File Structure
+- `client/`: Frontend code and components
+- `server/`: Backend code and API routes
+- `config/`: Database and server configuration
+- `models/`: Data schemas for the database
+- `routes/`: API route definitions
+- `app.js`: Backend server entry point
+- `README.md`: Project documentation
+
+## Backend Setup
+1. Set up the database: Create a MongoDB database and configure the connection in `server/config/database.js`.
+
+2. Install backend dependencies:
