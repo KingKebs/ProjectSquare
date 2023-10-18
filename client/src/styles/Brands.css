@@ -1,0 +1,23 @@
+.brands {
+  padding: 20px;
+}
+
+.brands h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.brand-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.brand {
+  width: 25%;
+  padding: 10px;
+  text-align: center;
+}
+
+.brand img {
+  max-width: 100%;
+}

@@ -1,0 +1,26 @@
+/* Slider.css */
+.slider {
+  position: relative;
+}
+
+.slider img {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.overlay h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.overlay p {
+  font-size: 18px;
+}
