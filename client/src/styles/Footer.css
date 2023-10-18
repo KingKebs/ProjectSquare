@@ -1,0 +1,50 @@
+/* Footer.css */
+.footer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1440px;
+  height: 500px;
+  background-color: purple;
+  color: white;
+  /* Other common styles for the Footer */
+}
+
+.heading {
+  position: absolute;
+  left: 162px;
+  top: 30px;
+  width: 162px;
+  height: 30px;
+  font-size: 24px;
+}
+
+.text1 {
+  position: absolute;
+  left: 79px;
+  top: 94px;
+  width: 55px;
+  height: 112px;
+}
+
+.text2 {
+  position: absolute;
+  left: 79px;
+  top: 168px;
+  width: 55px;
+  height: 112px;
+}
+
+.address {
+  position: absolute;
+  left: 79px;
+  top: 218px;
+  /* Styles for the address section */
+}
+
+.links {
+  position: absolute;
+  left: 500px;
+  top: 218px;
+  /* Styles for the links section */
+}

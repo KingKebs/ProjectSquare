@@ -11,7 +11,8 @@ function App() {
       <Hero />
       <WhatWeDo />
       <Slider />
-      {/* Other components... */}
+      <Brands />
+      <Footer />
     </div>
   );
 }
