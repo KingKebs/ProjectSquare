@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Brand = require('../models/Brand');
+const Brand = require('../models/Brands');
 
 // Retrieve and filter/sort brands
 router.get('/brands', async (req, res) => {
