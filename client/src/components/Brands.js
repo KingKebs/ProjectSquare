@@ -1,22 +1,39 @@
-// src/components/Menu.js
-import React from 'react';
-import './Menu.css'; // Import the associated CSS file
+import React, { useEffect, useState } from 'react';
 
-const Menu = () => {
+function Brands() {
+  const [brands, setBrands] = useState([]);
+
+  useEffect(() => {
+    // Define the URL of your API endpoint
+    const apiUrl = 'http://localhost:3000/api/brands'; // Update with your actual API URL
+
+    // Make the API request to fetch the list of brands
+    fetch(apiUrl)
+      .then((response) => response.json())
+      .then((data) => {
+        // Update the 'brands' state with the fetched data
+        setBrands(data);
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+      });
+  }, []);
+
   return (
-    <div className="menu">
-      <div className="logo">Your Logo</div>
-      <div className="menu-items">
-        <ul>
-          <li>Services</li>
-          <li>Industries</li>
-          <li>Cases</li>
-          <li>Contact</li>
-        </ul>
+    <div className="brands">
+      <h1 className="heading1">You'll be in good hands</h1>
+      <h2 className="heading2">Trusted by leading brands</h2>
+      <div className="brand-row top-row">
+        {/* Top row content */}
       </div>
-      <div className="lets-talk">Let's Talk</div>
+      <div className="brand-row middle-row">
+        {/* Middle row content */}
+      </div>
+      <div className="brand-row bottom-row">
+        {/* Bottom row content */}
+      </div>
     </div>
   );
-};
+}
 
-export default Menu;
+export default Brands;

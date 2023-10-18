@@ -1,23 +1,52 @@
+/* Brands.css */
 .brands {
-  padding: 20px;
+  position: absolute;
+  left: 79px;
+  top: 2148px;
+  width: 1281px;
+  height: 575px;
+  /* Other styles for the Brands section */
 }
 
-.brands h2 {
+.heading1 {
+  position: absolute;
+  left: 80px;
+  top: 2148px;
+  width: 306px;
+  height: 30px;
   font-size: 24px;
-  margin-bottom: 20px;
 }
 
-.brand-list {
-  display: flex;
-  flex-wrap: wrap;
+.heading2 {
+  position: absolute;
+  left: 80px;
+  top: 2200px;
+  font-size: 18px;
 }
 
-.brand {
-  width: 25%;
-  padding: 10px;
-  text-align: center;
+.brand-row {
+  width: 1280px;
+  height: 120px;
+  /* Other common styles for brand rows */
 }
 
-.brand img {
-  max-width: 100%;
+.top-row {
+  position: absolute;
+  left: 80px;
+  top: 2363px;
+  /* Styles for the top row */
+}
+
+.middle-row {
+  position: absolute;
+  left: 80px;
+  top: 2483px;
+  /* Styles for the middle row */
+}
+
+.bottom-row {
+  position: absolute;
+  left: 80px;
+  top: 2603px;
+  /* Styles for the bottom row */
 }
