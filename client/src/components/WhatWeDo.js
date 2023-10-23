@@ -1,6 +1,6 @@
 // WhatWeDo.js
 import React from 'react';
-import './WhatWeDo.css'; // Import the associated CSS file
+import '../styles/WhatWeDo.css'; // Import the associated CSS file
 
 const WhatWeDo = () => {
   return (

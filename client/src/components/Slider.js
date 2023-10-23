@@ -1,6 +1,6 @@
 // Slider.js
 import React from 'react';
-import './Slider.css'; // Import the associated CSS file
+import '../styles/Slider.css'; // Import the associated CSS file
 
 const Slider = () => {
   return (

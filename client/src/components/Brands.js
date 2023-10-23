@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import '../styles/Brands.css';
 
 function Brands() {
   const [brands, setBrands] = useState([]);
