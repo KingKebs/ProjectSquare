@@ -1,15 +1,40 @@
 /* WhatWeDo.css */
 .what-we-do {
-  text-align: left; /* Align text to the left */
-  padding: 20px; /* Add some padding for spacing */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-top: 50px;
 }
 
-h2 {
-  font-size: 24px; /* Set the title font size */
+.section-heading {
+  color: #70259B;
+  font-size: 29px;
 }
 
-.large-text {
-  font-size: 18px; /* Set the font size for large text */
-  font-weight: bold; /* Apply bold style to the text */
-  margin: 10px 0; /* Add margin for spacing between sentences */
+.section-text {
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  width: 291px;
+  height: 422px;
+  background-color: #70259B;
+  color: #000;
+  text-align: center;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.card h3 {
+  font-size: 24px;
+}
+
+.card p {
+  font-size: 16px;
 }
