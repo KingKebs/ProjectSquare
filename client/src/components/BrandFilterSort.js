@@ -1,6 +1,6 @@
 // BrandFilterSort.js
 import React from 'react';
-import './BrandFilterSort.css'; // Import the associated CSS file
+import '../styles/BrandFilterSort.css';
 
 const BrandFilterSort = () => {
   return (

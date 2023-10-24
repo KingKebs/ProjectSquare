@@ -1,6 +1,6 @@
 // src/components/Menu.js
 import React from 'react';
-import './Menu.css'; // Import the associated CSS file
+import '../styles/Menu.css'; // Import the associated CSS file
 
 const Menu = () => {
   return (

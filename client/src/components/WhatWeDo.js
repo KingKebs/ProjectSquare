@@ -1,19 +1,34 @@
 // WhatWeDo.js
 import React from 'react';
-import './WhatWeDo.css'; // Import the associated CSS file
+import '../styles/WhatWeDo.css'; // Import the CSS file
 
-const WhatWeDo = () => {
+function WhatWeDo() {
   return (
     <div className="what-we-do">
-      <h2>What We Do</h2>
-      <p className="large-text">
-        We offer a complete range of bespoke design solutions tailored to meet your unique needs.
+      <h2 className="section-heading">What We Do</h2>
+      <p className="section-text">
+        We offer a complete range of bespoke design and development services to help you turn your ideas into digital masterpieces.
       </p>
-      <p className="large-text">
-        Our team is dedicated to helping you bring your vision to life, delivering exceptional results.
-      </p>
+      <div className="card-container">
+        <div className="card">
+          <h3>Web Development</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div className="card">
+          <h3>User Experience & Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div className="card">
+          <h3>Mobile App Development</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div className="card">
+          <h3>Blockchain Solutions</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
     </div>
   );
-};
+}
 
 export default WhatWeDo;

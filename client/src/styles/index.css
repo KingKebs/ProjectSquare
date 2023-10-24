@@ -1,0 +1,28 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a basic font and background color */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Global styles for links */
+a {
+  text-decoration: none;
+  color: #0078d4;
+}
+
+/* Styles for headings */
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Add some spacing to elements */
+p {
+  margin-bottom: 1rem;
+}
